@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="number" type="text" placeholder="input number">
+<button onclick="sum()">run</button>
+<script>
+    function sum() {
+        let i = 1;
+        let sum = 0;
+        let n = document.getElementById('number').value
+        for (; i <=n; i++) {
+            sum = sum + i;
+            document.getElementById('text').innerHTML = 'tổng từ 1 đến ' +n+ ' là ' +  sum
+        }
+    }
+
+</script>
+<h1 id="text"></h1>
+</body>
+</html>
